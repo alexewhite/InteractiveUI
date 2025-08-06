@@ -30,16 +30,17 @@ struct ContentView: View {
                 .multilineTextAlignment(.center)
             Button("Submit") {
                 alert = "Your name is \(name) and your age is \(age)."
-                Button("Confirm") {
-                    textTitle = "Welcome, \(name) (age \(age))"
-                }
-                .font(.title)
-                .buttonStyle(.borderedProminent)
-                .tint(Color.purple)
+                
             }
             .font(.title)
             .buttonStyle(.borderedProminent)
             .tint(Color.blue)
+            Button("Confirm") {
+                textTitle = "Welcome, \(name) (age \(age))"
+            }
+            .font(.title)
+            .buttonStyle(.borderedProminent)
+            .tint(Color.purple)
         }
         .padding()
     }
